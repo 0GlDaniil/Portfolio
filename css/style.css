@@ -614,16 +614,16 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .contacts__form-item{
-  width: 100%;
+  position: relative;
   display: flex;
 }
 
 .contacts__form-item::after{
   content: '';
   width: 24px;
-  position: relative;
-  left: -10%;
-  bottom: -25px;
+  position: absolute;
+  left: 90%;
+  bottom: 35%;
   height: 24px;
 }
 .contacts__form-name::after{
@@ -1060,8 +1060,7 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 0.975rem;
   }
   .contacts__form-item::after{
-    bottom: -15px;
-    left: -15%;
+    bottom: 30%;
   }
   .contacts__button{
     min-width: 400px;
@@ -1116,7 +1115,7 @@ h1,h2,h3,h4,h5,h6 {
   .contacts__form-item::after{
     width: 14px;
     height: 14px;
-    bottom: -20px;
+    bottom: 38%;
   }
   .contacts__image{
     right: -10vw;
