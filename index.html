@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moon-Pay</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="modal modal__login">
+    <div class="modal__wrapper">
+      <div class="modal__close">
+        <div class="modal__close-x"></div>
+      </div>
+      <div class="modal__body">
+        <h2 class="title modal__title">
+          <span class="site__lang_active rus site__lang">Авторизация</span>
+          <span class="site__lang eng">
+            Autorisation
+          </span>
+        </h2>
+        <form class="modal__form">
+          <p class="contacts__form-mail contacts__form-item modal__input">
+            <label class="visually-hidden site__lang_active rus site__lang" for="modal_login">Почта</label>
+            <input id="modal_login" class="input site__lang_active rus site__lang" type="email" name="mail" placeholder="Почта">
+            <label class="visually-hidden site__lang eng" for="modal_login2">Mail</label>
+            <input id="modal_login2" class="input eng site__lang" type="email" name="mail" placeholder="Email">
+          </p>
+          <p class="modal__form-pass contacts__form-item modal__input">
+            <label class="visually-hidden site__lang_active rus site__lang" for="modal_pass">Пароль</label>
+            <input id="modal_pass" class="input site__lang_active rus site__lang" type="password" minlength="6" autocomplete="on" name="mail" placeholder="Пароль">
+            <label class="visually-hidden eng site__lang" for="modal_pass2">Password</label>
+            <input id="modal_pass2" class="input eng site__lang" type="password" minlength="6" autocomplete="on" name="mail" placeholder="Password">
+          </p>
+          <p class="contacts__form-item"><button class="button modal__btn" type="submit" ><span class="site__lang_active rus site__lang">Войти</span><span class="site__lang eng">Log-in</span></button></p>
+          <a class="modal__link" href="/">
+            <span class="site__lang_active rus site__lang">Не помню пароль</span>
+            <span class="site__lang eng">
+              Forgot the password
+            </span>
+          </a>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="modal modal__application">
+    <div class="modal__wrapper">
+      <div class="modal__close">
+        <div class="modal__close-x"></div>
+      </div>
+      <div class="modal__body">
+        <img class="modal__img" src="./img/svg/BigCoin.svg" alt="Coin-img">
+        <p class="site__lang_active rus site__lang modal__text">Ваша заявка успешно отправлена, наш менеджер свяжетсяя c вами в ближайшее время</p>
+        <p class="site__lang eng modal__text">Your application has been successfully submitted, our manager will contact you as soon as possible</p>
+        <button class="contacts__button button modal__btn-appl" type="submit" ><span class="site__lang_active rus site__lang">Понятно</span><span class="site__lang eng">Understand</span></button>
+      </div>
+    </div>
+  </div>
+  <header class="header">
+    <div class="container header__wrapper">
+      <a href="/" class="header__logo">
+        <img class="header__logo-img" src="./img/svg/moon-svgrepo-com.svg" alt="Logo" loading="lazy" >
+      </a>
+      <div class="header__buttons">
+        <button type="button" class="header__button header__login">
+          <span class="header__login-text"><span class="site__lang_active rus site__lang">Войти</span><span class="site__lang eng">Log-in</span></span>
+          <img class="header__button-img" src="./img/svg/icon-logout.svg" alt="login">
+        </button>
+        <ul class="header__language header__button">
+          <li>
+            <button class="header__lang-rus">
+              <img class="header__lang_prev-image" src="./img/svg/rus_lang.jpg" alt="language" width="16" height="16">
+              <span>RUS</span>
+            </button>
+          </li>
+          <li>
+            <button class="header__lang-eng">
+              <img class="header__lang_prev-image" src="./img/svg/lang-img.svg" alt="language" width="16" height="16">
+              <span>ENG</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="container hero-wrapper">
+        <p class="hero__pre-title"><span class="site__lang_active rus site__lang">Добро пожаловать на официальный канал</span><span class="site__lang eng">Welcome to the official channel</span></p>
+        <h1 class="hero__title">Moon-pay</h1>
+        <p class="hero__subtitle"><span class="site__lang_active rus site__lang">Здесь мы публикуем новости, обновления и эксклюзивную информацию о работе нашей платежной компании</span><span class="site__lang eng">Here we publish news, updates and exclusive information about the work of our payment company</span></p>
+        <button type="button" class="button hero__button"><a href="/"><span class="site__lang_active rus site__lang">Подключиться</span><span class="site__lang eng">Connect</span></a></button>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="adv__wrapper">
+        <div class="container adv__container">
+          <ul class="adv__list">
+            <li class="adv__list-item"><span class="site__lang_active rus site__lang">Отсутствие юридических <br>формальностей</span><span class="site__lang eng">Lack of legal<br>formalities</span></li>
+            <li class="adv__list-item"><span class="site__lang_active rus site__lang">Быстрая регистрация<br> и интеграция</span><span class="site__lang eng">Quick registration<br>and integration</span></li>
+            <li class="adv__list-item"><span class="site__lang_active rus site__lang">Просто подключайся<br>и принимай платежи</span><span class="site__lang eng">Just connect<br> and accept payments</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="adv__img"></div>
+    </section>  
+    <section class="integration">
+      <div class="container">
+        <h2 class="title"><span class="site__lang_active rus site__lang">способы интеграции</span><span class="site__lang eng">integration methods</span></h2>
+        <ul class="integration__list">
+          <li class="integration__list-item">
+            <span class="integration__list-number">01</span>
+            <div class="integration__list-text">
+              <h3 class="integration__list-title"><span class="site__lang_active rus site__lang">Название</span><span class="site__lang eng">Title</span></h3>
+              <p class="integration__list-subtitle"><span class="site__lang_active rus site__lang">Преимущество в двух словах или в две строки</span><span class="site__lang eng">The advantage is in two words or in two lines</span></p>
+            </div>
+          </li>
+          <li class="integration__list-item">
+            <span class="integration__list-number">02</span>
+            <div class="integration__list-text">
+              <h3 class="integration__list-title">host2host</h3>
+              <p class="integration__list-subtitle"><span class="site__lang_active rus site__lang">Преимущество в двух словах или в две строки</span><span class="site__lang eng">The advantage is in two words or in two lines</span></p>
+            </div>
+          </li>
+          <li class="integration__list-item">
+            <span class="integration__list-number">03</span>
+            <div class="integration__list-text">
+              <h3 class="integration__list-title"><span class="site__lang_active rus site__lang">Платежная форма</span><span class="site__lang eng">Payment form</span></h3>
+              <p class="integration__list-subtitle"><span class="site__lang_active rus site__lang">Преимущество в двух словах или в две строки</span><span class="site__lang eng">The advantage is in two words or in two lines</span></p>
+            </div>
+          </li>
+          <li class="integration__list-item">
+            <span class="integration__list-number">04</span>
+            <div class="integration__list-text">
+              <h3 class="integration__list-title"><span class="site__lang_active rus site__lang">Телеграмм-приложение</span><span class="site__lang eng">Telegram-app</span></h3>
+              <p class="integration__list-subtitle"><span class="site__lang_active rus site__lang">Преимущество в двух словах или в две строки</span><span class="site__lang eng">The advantage is in two words or in two lines</span></p>
+            </div>
+          </li>
+          <li class="integration__list-item">
+            <span class="integration__list-number">05</span>
+            <div class="integration__list-text">
+              <h3 class="integration__list-title"><span class="site__lang_active rus site__lang">Название</span><span class="site__lang eng">Title</span></h3>
+              <p class="integration__list-subtitle"><span class="site__lang_active rus site__lang">Преимущество в двух словах или в две строки</span><span class="site__lang eng">The advantage is in two words or in two lines</span></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="methods">
+      <div class="container">
+        <h2 class="title"><span class="site__lang_active rus site__lang">методы принимаемых платежей</span><span class="site__lang eng">methods of accepted payments</span></h2>
+        <ul class="methods__list">
+          <li class="methods__list-item">
+            <div class="methods__list-text">
+              <h3 class="methods__list-title">ecom</h3>
+              <p class="methods__list-subtitle"><span class="site__lang_active rus site__lang">Пару слов о каждом методе</span><span class="site__lang eng">A few words about each method</span></p>
+            </div>
+          </li>
+          <li class="methods__list-item">
+            <div class="methods__list-text">
+              <h3 class="methods__list-title">sbp</h3>
+              <p class="methods__list-subtitle"><span class="site__lang_active rus site__lang">Пару слов о каждом методе</span><span class="site__lang eng">A few words about each method</span></p>
+            </div>
+          </li>
+          <li class="methods__list-item">
+            <div class="methods__list-text">
+              <h3 class="methods__list-title">p2p</h3>
+              <p class="methods__list-subtitle"><span class="site__lang_active rus site__lang">Пару слов о каждом методе</span><span class="site__lang eng">A few words about each method</span></p>
+            </div>
+          </li>
+          <li class="methods__list-item">
+            <div class="methods__list-text">
+              <h3 class="methods__list-title">pix</h3>
+              <p class="methods__list-subtitle"><span class="site__lang_active rus site__lang">Пару слов о каждом методе</span><span class="site__lang eng">A few words about each method</span></p>
+            </div>
+          </li>
+          <li class="methods__list-item">
+            <div class="methods__list-text">
+              <h3 class="methods__list-title">pix</h3>
+              <p class="methods__list-subtitle"><span class="site__lang_active rus site__lang">Пару слов о каждом методе</span><span class="site__lang eng">A few words about each method</span></p>
+            </div>
+          </li>
+          <li class="methods__list-item">
+            <div class="methods__list-text">
+              <h3 class="methods__list-title">ecom</h3>
+              <p class="methods__list-subtitle"><span class="site__lang_active rus site__lang">Пару слов о каждом методе</span><span class="site__lang eng">A few words about each method</span></p>
+            </div>
+          </li>
+          <li class="methods__list-item">
+            <div class="methods__list-text">
+              <h3 class="methods__list-title">sbp</h3>
+              <p class="methods__list-subtitle"><span class="site__lang_active rus site__lang">Пару слов о каждом методе</span><span class="site__lang eng">A few words about each method</span></p>
+            </div>
+          </li>
+          <li class="methods__list-item">
+            <div class="methods__list-text">
+              <h3 class="methods__list-title">p2p</h3>
+              <p class="methods__list-subtitle"><span class="site__lang_active rus site__lang">Пару слов о каждом методе</span><span class="site__lang eng">A few words about each method</span></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="tarifs">
+      <div class="tarifs__wrapper">
+        <h2 id="tarifs" class="title tarifs__title"><span class="site__lang_active rus site__lang">Тарифы</span><span class="site__lang eng">Tariffs</span></h2>
+        <div class="container tarifs__container">
+          <ul class="tarifs__list">
+            <li class="tarifs__list-item tarifs__is-active">
+              <h4 class="tarifs__list-title"><span class="site__lang_active rus site__lang">Внутри-банковский процессинг (Мальта)</span><span class="site__lang eng">In-house banking processing (Malta)</span></h4>
+              <ul class="tarifs__description">
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Валюта</span><span class="site__lang eng">Currency</span><span class="tarifs__descr-bold">EUR</span>
+                </li>
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Категория трафика</span><span class="site__lang eng">Traffic category</span> <span class="tarifs__descr-bold"><span class="site__lang_active rus site__lang">Хай Риск (лицензионный)</span><span class="site__lang eng">High Risk (licensed)</span></span>
+                </li>
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Конверсия</span><span class="site__lang eng">Conversion rate</span><span class="tarifs__descr-bold">100%</span>
+                </li>
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Тариф на Вход</span><span class="site__lang eng">Entrance Fee</span><span class="tarifs__descr-bold">5%</span>
+                </li>
+                <li class="tarifs__descr-item">
+                  GEO<span class="tarifs__descr-bold"><span class="site__lang_active rus site__lang">Весь мир, за исключением Российской Федерации</span><span class="site__lang eng">World, excl. Russian Federation</span></span>
+                </li>
+              </ul>
+              <a href="/" class="tarifs__list-link"><span class="site__lang_active rus site__lang">Подробнее</span><span class="site__lang eng">More detailed</span></a>
+            </li>
+            <li class="tarifs__list-item">
+              <h4 class="tarifs__list-title"><span class="site__lang_active rus site__lang">Внутри-банковский процессинг (Мальта)2</span><span class="site__lang eng">In-house banking processing (Malta)2</span></h4>
+              <ul class="tarifs__description">
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Валюта</span><span class="site__lang eng">Currency</span><span class="tarifs__descr-bold">EUR</span>
+                </li>
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Категория трафика</span><span class="site__lang eng">Traffic category</span> <span class="tarifs__descr-bold"><span class="site__lang_active rus site__lang">Хай Риск (лицензионный)</span><span class="site__lang eng">High Risk (licensed)</span></span>
+                </li>
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Конверсия</span><span class="site__lang eng">Conversion rate</span><span class="tarifs__descr-bold">100%</span>
+                </li>
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Тариф на Вход</span><span class="site__lang eng">Entrance Fee</span><span class="tarifs__descr-bold">5%</span>
+                </li>
+                <li class="tarifs__descr-item">
+                  GEO<span class="tarifs__descr-bold"><span class="site__lang_active rus site__lang">Весь мир, за исключением Российской Федерации</span><span class="site__lang eng">World, excl. Russian Federation</span></span>
+                </li>
+              </ul>
+              <a href="/" class="tarifs__list-link"><span class="site__lang_active rus site__lang">Подробнее</span><span class="site__lang eng">More detailed</span></a>
+            </li>
+            <li class="tarifs__list-item">
+              <h4 class="tarifs__list-title"><span class="site__lang_active rus site__lang">Внутри-банковский процессинг (Мальта)3</span><span class="site__lang eng">In-house banking processing (Malta)3</span></h4>
+              <ul class="tarifs__description">
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Валюта</span><span class="site__lang eng">Currency</span><span class="tarifs__descr-bold">EUR</span>
+                </li>
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Категория трафика</span><span class="site__lang eng">Traffic category</span> <span class="tarifs__descr-bold"><span class="site__lang_active rus site__lang">Хай Риск (лицензионный)</span><span class="site__lang eng">High Risk (licensed)</span></span>
+                </li>
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Конверсия</span><span class="site__lang eng">Conversion rate</span><span class="tarifs__descr-bold">100%</span>
+                </li>
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Тариф на Вход</span><span class="site__lang eng">Entrance Fee</span><span class="tarifs__descr-bold">5%</span>
+                </li>
+                <li class="tarifs__descr-item">
+                  GEO<span class="tarifs__descr-bold"><span class="site__lang_active rus site__lang">Весь мир, за исключением Российской Федерации</span><span class="site__lang eng">World, excl. Russian Federation</span></span>
+                </li>
+              </ul>
+              <a href="/" class="tarifs__list-link"><span class="site__lang_active rus site__lang">Подробнее</span><span class="site__lang eng">More detailed</span></a>
+            </li>
+            <li class="tarifs__list-item">
+              <h4 class="tarifs__list-title"><span class="site__lang_active rus site__lang">Внутри-банковский процессинг (Мальта)4</span><span class="site__lang eng">In-house banking processing (Malta)4</span></h4>
+              <ul class="tarifs__description">
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Валюта</span><span class="site__lang eng">Currency</span><span class="tarifs__descr-bold">EUR</span>
+                </li>
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Категория трафика</span><span class="site__lang eng">Traffic category</span> <span class="tarifs__descr-bold"><span class="site__lang_active rus site__lang">Хай Риск (лицензионный)</span><span class="site__lang eng">High Risk (licensed)</span></span>
+                </li>
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Конверсия</span><span class="site__lang eng">Conversion rate</span><span class="tarifs__descr-bold">100%</span>
+                </li>
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Тариф на Вход</span><span class="site__lang eng">Entrance Fee</span><span class="tarifs__descr-bold">5%</span>
+                </li>
+                <li class="tarifs__descr-item">
+                  GEO<span class="tarifs__descr-bold"><span class="site__lang_active rus site__lang">Весь мир, за исключением Российской Федерации</span><span class="site__lang eng">World, excl. Russian Federation</span></span>
+                </li>
+              </ul>
+              <a href="/" class="tarifs__list-link"><span class="site__lang_active rus site__lang">Подробнее</span><span class="site__lang eng">More detailed</span></a>
+            </li>
+            <li class="tarifs__list-item">
+              <h4 class="tarifs__list-title"><span class="site__lang_active rus site__lang">Внутри-банковский процессинг (Мальта)5</span><span class="site__lang eng">In-house banking processing (Malta)5</span></h4>
+              <ul class="tarifs__description">
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Валюта</span><span class="site__lang eng">Currency</span><span class="tarifs__descr-bold">EUR</span>
+                </li>
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Категория трафика</span><span class="site__lang eng">Traffic category</span> <span class="tarifs__descr-bold"><span class="site__lang_active rus site__lang">Хай Риск (лицензионный)</span><span class="site__lang eng">High Risk (licensed)</span></span>
+                </li>
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Конверсия</span><span class="site__lang eng">Conversion rate</span><span class="tarifs__descr-bold">100%</span>
+                </li>
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Тариф на Вход</span><span class="site__lang eng">Entrance Fee</span><span class="tarifs__descr-bold">5%</span>
+                </li>
+                <li class="tarifs__descr-item">
+                  GEO<span class="tarifs__descr-bold"><span class="site__lang_active rus site__lang">Весь мир, за исключением Российской Федерации</span><span class="site__lang eng">World, excl. Russian Federation</span></span>
+                </li>
+              </ul>
+              <a href="/" class="tarifs__list-link"><span class="site__lang_active rus site__lang">Подробнее</span><span class="site__lang eng">More detailed</span></a>
+            </li>
+            <li class="tarifs__list-item">
+              <h4 class="tarifs__list-title"><span class="site__lang_active rus site__lang">Внутри-банковский процессинг (Мальта)6</span><span class="site__lang eng">In-house banking processing (Malta)6</span></h4>
+              <ul class="tarifs__description">
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Валюта</span><span class="site__lang eng">Currency</span><span class="tarifs__descr-bold">EUR</span>
+                </li>
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Категория трафика</span><span class="site__lang eng">Traffic category</span> <span class="tarifs__descr-bold"><span class="site__lang_active rus site__lang">Хай Риск (лицензионный)</span><span class="site__lang eng">High Risk (licensed)</span></span>
+                </li>
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Конверсия</span><span class="site__lang eng">Conversion rate</span><span class="tarifs__descr-bold">100%</span>
+                </li>
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Тариф на Вход</span><span class="site__lang eng">Entrance Fee</span><span class="tarifs__descr-bold">5%</span>
+                </li>
+                <li class="tarifs__descr-item">
+                  GEO<span class="tarifs__descr-bold"><span class="site__lang_active rus site__lang">Весь мир, за исключением Российской Федерации</span><span class="site__lang eng">World, excl. Russian Federation</span></span>
+                </li>
+              </ul>
+              <a href="/" class="tarifs__list-link"><span class="site__lang_active rus site__lang">Подробнее</span><span class="site__lang eng">More detailed</span></a>
+            </li>
+            <li class="tarifs__list-item">
+              <h4 class="tarifs__list-title"><span class="site__lang_active rus site__lang">Внутри-банковский процессинг (Мальта)7</span><span class="site__lang eng">In-house banking processing (Malta)7</span></h4>
+              <ul class="tarifs__description">
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Валюта</span><span class="site__lang eng">Currency</span><span class="tarifs__descr-bold">EUR</span>
+                </li>
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Категория трафика</span><span class="site__lang eng">Traffic category</span> <span class="tarifs__descr-bold"><span class="site__lang_active rus site__lang">Хай Риск (лицензионный)</span><span class="site__lang eng">High Risk (licensed)</span></span>
+                </li>
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Конверсия</span><span class="site__lang eng">Conversion rate</span><span class="tarifs__descr-bold">100%</span>
+                </li>
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Тариф на Вход</span><span class="site__lang eng">Entrance Fee</span><span class="tarifs__descr-bold">5%</span>
+                </li>
+                <li class="tarifs__descr-item">
+                  GEO<span class="tarifs__descr-bold"><span class="site__lang_active rus site__lang">Весь мир, за исключением Российской Федерации</span><span class="site__lang eng">World, excl. Russian Federation</span></span>
+                </li>
+              </ul>
+              <a href="/" class="tarifs__list-link"><span class="site__lang_active rus site__lang">Подробнее</span><span class="site__lang eng">More detailed</span></a>
+            </li>
+            <li class="tarifs__list-item">
+              <h4 class="tarifs__list-title"><span class="site__lang_active rus site__lang">Внутри-банковский процессинг (Мальта)8</span><span class="site__lang eng">In-house banking processing (Malta)8</span></h4>
+              <ul class="tarifs__description">
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Валюта</span><span class="site__lang eng">Currency</span><span class="tarifs__descr-bold">EUR</span>
+                </li>
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Категория трафика</span><span class="site__lang eng">Traffic category</span> <span class="tarifs__descr-bold"><span class="site__lang_active rus site__lang">Хай Риск (лицензионный)</span><span class="site__lang eng">High Risk (licensed)</span></span>
+                </li>
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Конверсия</span><span class="site__lang eng">Conversion rate</span><span class="tarifs__descr-bold">100%</span>
+                </li>
+                <li class="tarifs__descr-item">
+                  <span class="site__lang_active rus site__lang">Тариф на Вход</span><span class="site__lang eng">Entrance Fee</span><span class="tarifs__descr-bold">5%</span>
+                </li>
+                <li class="tarifs__descr-item">
+                  GEO<span class="tarifs__descr-bold"><span class="site__lang_active rus site__lang">Весь мир, за исключением Российской Федерации</span><span class="site__lang eng">World, excl. Russian Federation</span></span>
+                </li>
+              </ul>
+              <a href="/" class="tarifs__list-link"><span class="site__lang_active rus site__lang">Подробнее</span><span class="site__lang eng">More detailed</span></a>
+            </li>
+          </ul>
+          <div class="tarifs__chosen">
+            <h3 class="tarifs__chosen-title">
+              <span class="site__lang_active rus site__lang">Выбранные тарифы</span><span class="site__lang eng">Selected tariffs</span>
+            </h3>
+            <img src="./img/Line.png" alt="chosen-image" class="tarifs__chosen-image">
+            <ol class="tarifs__chosen-list">
+              <li class="tarifs__chosen-item">
+                <span class="chosen__item-text">
+                  <span class="site__lang_active rus site__lang">
+                    Внутри-банковский процессинг (Мальта)
+                  </span>
+                  <span class="site__lang eng">
+                    In-house banking processing (Malta)
+                  </span>
+                </span>
+              </li>
+            </ol>
+            <button class="button tarifs__chosen-btn" type="button">
+              <a href="/" class="tarifs__chosen-link">
+                <span class="site__lang_active rus site__lang">Подключение</span><span class="site__lang eng">Connection</span>
+              </a>
+            </button>
+          </div>
+        </div>
+    </div>
+    </section>
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <div class="container contacts__container">
+          <div class="contacts__left">
+            <h2 class="title contacts__title"><span class="site__lang_active rus site__lang">Заполните форму</span><span class="site__lang eng">Fill out the form</span></h2>
+            <p class="contacts__subtitle"><span class="site__lang_active rus site__lang">Текст под заголовком к призыву</span><span class="site__lang eng">The text under the title to the appeal</span></p>
+            <img class="contacts__image"src="./img/svg/Coins.svg" alt="coins-icon" width="450" height="450">
+          </div>
+          <div class="contacts__right">
+            <form class="contacts__form">
+              <p class="contacts__form-item contacts__form-name">
+                <label class="visually-hidden site__lang_active rus site__lang" for="username">Имя</label>
+                <input id="username" class="input site__lang_active rus site__lang" type="text" name="username" placeholder="Имя">
+                <label class="visually-hidden site__lang eng" for="username2">Name</label>
+                <input id="username2" class="input eng site__lang" type="text" name="username" placeholder="Name">
+              </p>
+
+              <p class="contacts__form-mail contacts__form-item">
+                <label class="visually-hidden site__lang_active rus site__lang" for="mail">Почта</label>
+                <input id="mail" class="input site__lang_active rus site__lang" type="email" name="mail" placeholder="Почта">
+                <label class="visually-hidden site__lang eng" for="mail2">mail</label>
+                <input id="mail2" class="input eng site__lang" type="email2" name="mail" placeholder="Email">
+              </p>
+
+              <p class="contacts__form-telegram contacts__form-item">
+                <label class="visually-hidden site__lang_active rus site__lang" for="telegram">Телеграм</label>
+                <input id="telegram" class="input site__lang_active rus site__lang" type="text" name="telegram" placeholder="Телеграм">
+                <label class="visually-hidden site__lang eng" for="telegram2">Telegram</label>
+                <input id="telegram2" class="input eng site__lang" type="text" name="telegram" placeholder="Telegram">
+              </p>
+
+              <p class="contacts__form-project contacts__form-item">
+                <label class="visually-hidden site__lang_active rus site__lang" for="project">Имя проекта</label>
+                <input id="project" class="input site__lang_active rus site__lang" type="url" name="project" placeholder="Ссылка на проект">
+                <label class="visually-hidden site__lang eng" for="project2">Name of project</label>
+                <input id="project2" class="input site__lang eng" type="url" name="project" placeholder="Project link">
+              </p>
+
+              <p class="contacts__form-item">
+                <label class="visually-hidden" for="business"><span class="site__lang_active rus site__lang">Тип бизнеса</span><span class="site__lang eng">Business-type</span></label>
+                <select class="input" name="business-type" id="business">
+                  <option class="site__lang_active rus site__lang" value="" selected disabled>
+                    Тип бизнеса</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </p>
+
+              <p class="contacts__form-item"><button class="contacts__button button" type="submit" ><span class="site__lang_active rus site__lang">Подключиться</span><span class="site__lang eng">Connect</span></button></p>
+              <p class="confidence"><span class="site__lang_active rus site__lang">Нажимая на кнопку, Вы даете согласие на обработку персональных данных согласно нашей политике конфиденциальности.</span><span class="site__lang eng"></span></p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="line">
+        <img class="line__img" src="./img/Line.png" alt="line">
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <a href="/" class="header__logo">
+            <img class="header__logo-img" src="./img/svg/moon-svgrepo-com.svg" alt="Logo" loading="lazy" >
+          </a>
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item"><a href="/"><span class="site__lang_active rus site__lang">Контакты</span><span class="site__lang eng">Contacts</span></a></li>
+              <li class="footer__nav-item"><a href="#tarifs"><span class="site__lang_active rus site__lang">Тарифы</span><span class="site__lang eng">Tariffs</span></a></li>
+              <li class="footer__nav-item"><a href="/"><span class="site__lang_active rus site__lang">Флоу</span><span class="site__lang eng">Flow</span></a></li>
+              <li class="footer__nav-item"><a href="/">API</a></li>
+            </ul>
+            <a href="/" class="footer__telegram-icon">
+              <img width="20" height="20" src="./img/svg/telegram_white.svg" alt="telegram">
+            </a>
+          </nav>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__bottom-text">© Moon-pay 2024</p>
+          <a class="footer__bottom-link" href="/"><span class="site__lang_active rus site__lang">Политика конфиденциальности</span><span class="site__lang eng">Privacy policy</span></a>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+  <script src="/js/script.js"></script>
+</body>
+</html>
