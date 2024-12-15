@@ -227,7 +227,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .hero__subtitle{
-  max-width: clamp(20rem,50vw,42.18rem);
+  max-width: clamp(320px, 70vw, 675px);
   margin-inline: auto;
   color: var(--color-dark);
   font-size: clamp(1rem,1.75vw,1.5rem);
@@ -934,9 +934,6 @@ h1,h2,h3,h4,h5,h6 {
   }
   .button{
     height: 53px;
-  }
-  .hero{
-    min-height: 560px;
   }
   .methods__list{
     grid-template-columns: repeat(2,1fr);
