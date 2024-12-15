@@ -1100,7 +1100,7 @@ h1,h2,h3,h4,h5,h6 {
   .tarifs__list-link{
     font-size: 0.75rem;
   }
-  .chosen__item-text{
+  .tarifs__chosen-item{
     font-size: 0.625rem;
   }
   .methods__list-item{
